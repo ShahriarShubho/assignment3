@@ -41,14 +41,14 @@ function hotelCost(days){
         hotelFee = days * 100;
     }else if(days<=20){
         var first10DaysFee = 10 * 100;
-        var DayRemaining = days - 10;
-        var after10DaysFee =  DayRemaining * 80;
+        var dayRemaining = days - 10;
+        var after10DaysFee =  dayRemaining * 80;
         hotelFee = first10DaysFee + after10DaysFee;
     }else{
         var first10DaysFee = 10 * 100;
         var secound10DaysFee = 10 * 80;
-        var DayRemaining = days - 20;
-        var after20DaysFee =  DayRemaining * 50;
+        var dayRemaining = days - 20;
+        var after20DaysFee =  dayRemaining * 50;
         hotelFee = first10DaysFee + secound10DaysFee + after20DaysFee;
     }   
     return hotelFee;

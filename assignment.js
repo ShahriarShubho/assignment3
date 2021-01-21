@@ -27,3 +27,29 @@ function budgetCalculator(watch, phone, leptop){
     }
       return totalPrice
 }
+
+
+
+//This code is Hotel Cost Calculating code
+
+function hotelCost(days){
+    
+    var hotelFee = 0;
+    if(days<0){
+        return "Invalid, Days can not be nagative";
+    }else if(days<=10){
+        hotelFee = days * 100;
+    }else if(days<=20){
+        var first10DaysFee = 10 * 100;
+        var DayRemaining = days - 10;
+        var after10DaysFee =  DayRemaining * 80;
+        hotelFee = first10DaysFee + after10DaysFee;
+    }else{
+        var first10DaysFee = 10 * 100;
+        var secound10DaysFee = 10 * 80;
+        var DayRemaining = days - 20;
+        var after20DaysFee =  DayRemaining * 50;
+        hotelFee = first10DaysFee + secound10DaysFee + after20DaysFee;
+    }   
+    return hotelFee;
+}   

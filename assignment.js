@@ -1,7 +1,6 @@
 
 
 
-
 //This code is kilometerToMeter Converted code
 
 function kilometerToMeter(kilometer){
@@ -60,7 +59,8 @@ function hotelCost(days){
 
 function megaFriend(friendArry) {
 
-    if(friendArry.length <= 0){
+    //this conditon is for empty array error massage
+    if(friendArry.length <= 0){                
         return "Your Arry is Empty";
        }
     var largName = friendArry[0];

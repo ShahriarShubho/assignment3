@@ -52,4 +52,19 @@ function hotelCost(days){
         hotelFee = first10DaysFee + secound10DaysFee + after20DaysFee;
     }   
     return hotelFee;
-}   
+}
+
+
+//This code is mega Friend code
+
+function megaFriend(friendArry){
+    var namelength = 0;
+    for (var i = 0; i < friendArry.length; i++) {
+        if (friendArry[i].length > namelength) {
+        var namelength = friendArry[i].length;
+        var longest = friendArry[i];
+      }
+      
+    } return longest;
+
+  }

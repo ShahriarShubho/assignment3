@@ -2,7 +2,7 @@
 
 
 
-//This code is Kilometer to Meter Converted code
+//This code is kilometerToMeter Converted code
 
 function kilometerToMeter(kilometer){
     
@@ -14,7 +14,7 @@ function kilometerToMeter(kilometer){
 }
 
 
-//This code is Budge Calcolating code
+//This code is budgeCalcolator code
 
 function budgetCalculator(watch, phone, leptop){
 
@@ -30,7 +30,7 @@ function budgetCalculator(watch, phone, leptop){
 
 
 
-//This code is Hotel Cost Calculating code
+//This code is hotelCost Calculating code
 
 function hotelCost(days){
     
@@ -55,16 +55,21 @@ function hotelCost(days){
 }
 
 
-//This code is mega Friend code
+//This code is megaFriend code
 
-function megaFriend(friendArry){
-    var namelength = 0;
-    for (var i = 0; i < friendArry.length; i++) {
-        if (friendArry[i].length > namelength) {
-        var namelength = friendArry[i].length;
-        var longest = friendArry[i];
-      }
-      
-    } return longest;
 
-  }
+function megaFriend(friendArry) {
+
+    if(friendArry.length <= 0){
+        return "Your Arry is Empty";
+       }
+    var largName = friendArry[0];
+    for(var i = 0 ; i < friendArry.length; i++) {
+        var namelength = friendArry[i];
+        if(namelength.length > largName.length ){
+            largName = namelength;   
+        }
+    }
+    return largName;
+ }
+
